@@ -19,6 +19,6 @@
     "DATABASE_SSL": "false",
     "JWT_SECRET": "DF8yyzqVl8I1Fe7mQlchKA=="
   },
-  "buildCommand": "npm run build",
-  "startCommand": "npm run start"
+  "installCommand": "yum install hostname && npm install",
+  "buildCommand": "npm run build"
 }
