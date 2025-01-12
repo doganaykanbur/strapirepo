@@ -1,7 +1,6 @@
 # Strapi default directories
 /node_modules
 /.cache
-/.tmp
 
 # Strapi SQLite Database (Keep the DB file tracked)
 !data/db.sqlite
