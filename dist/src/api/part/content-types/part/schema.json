@@ -1,0 +1,92 @@
+{
+    "kind": "collectionType",
+    "collectionName": "parts",
+    "info": {
+        "singularName": "part",
+        "pluralName": "parts",
+        "displayName": "parts",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "brand": {
+            "type": "string"
+        },
+        "price": {
+            "type": "biginteger"
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "RAM",
+                "GPU",
+                "CPU",
+                "Motherboard",
+                "Mouse",
+                "Keyboard",
+                "Monitor",
+                "SSD",
+                "PSU",
+                "Case",
+                "Headset",
+                "Mousepad",
+                "TowerCooler",
+                "LiquidCooler"
+            ]
+        },
+        "capacity": {
+            "type": "string"
+        },
+        "speed": {
+            "type": "string"
+        },
+        "cores": {
+            "type": "string"
+        },
+        "memory": {
+            "type": "string"
+        },
+        "chipset": {
+            "type": "string"
+        },
+        "dpi": {
+            "type": "string"
+        },
+        "resolution": {
+            "type": "string"
+        },
+        "refresh_rate": {
+            "type": "integer"
+        },
+        "ssd_type": {
+            "type": "string"
+        },
+        "wattage": {
+            "type": "integer"
+        },
+        "form_factor": {
+            "type": "string"
+        },
+        "size": {
+            "type": "string"
+        },
+        "supported_sockets": {
+            "type": "string"
+        },
+        "radiator_size": {
+            "type": "string"
+        },
+        "builds": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::build.build",
+            "mappedBy": "parts"
+        }
+    }
+}

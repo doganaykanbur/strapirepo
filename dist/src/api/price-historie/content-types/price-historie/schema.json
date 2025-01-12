@@ -1,0 +1,28 @@
+{
+    "kind": "collectionType",
+    "collectionName": "price_histories",
+    "info": {
+        "singularName": "price-historie",
+        "pluralName": "price-histories",
+        "displayName": "priceHistories",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "price": {
+            "type": "decimal"
+        },
+        "Timestamp": {
+            "type": "datetime"
+        },
+        "buildID": {
+            "type": "string"
+        },
+        "user": {
+            "type": "string"
+        }
+    }
+}
